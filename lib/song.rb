@@ -47,7 +47,7 @@ class Song
       if !genres.key?(genre)
         genres[genre] = 1
       else 
-        genres
+        genres[genre] = genre
     binding.pry
   end
   
