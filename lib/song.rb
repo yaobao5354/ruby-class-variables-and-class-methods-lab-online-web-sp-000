@@ -45,7 +45,9 @@ class Song
     genres = {}
     @@genres.each do |genre|
       if !genres.key?(genre)
-        genres[genres]
+        genres[genre] = 1
+      else 
+        genres
     binding.pry
   end
   
