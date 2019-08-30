@@ -34,7 +34,7 @@ class Song
   def self.artists 
     artists = []
     @@artists.each do |artist|
-      if artists.include?(artist)
+      if !artists.include?(artist)
         artists << artist
         binding.pry
       end 
