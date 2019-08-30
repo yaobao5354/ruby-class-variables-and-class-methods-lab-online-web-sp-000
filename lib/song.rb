@@ -44,7 +44,8 @@ class Song
   def self.genre_count
     genres = {}
     @@genres.each do |genre|
-      if !genres.key?
+      if !genres.key?(genre)
+        genres[genres]
     binding.pry
   end
   
