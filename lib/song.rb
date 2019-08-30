@@ -31,4 +31,14 @@ class Song
     genres
   end 
   
+  def artists 
+    artists = []
+    @@artists.each do |artist|
+      if !artists.include?(artist)
+        artists << artist
+      end 
+    end 
+    artists
+  end 
+  
 end 
