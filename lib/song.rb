@@ -36,7 +36,7 @@ class Song
     @@artists.each do |artist|
       if artists.include?(artist)
         artists << artist
-        
+        binding.pry
       end 
     end 
     artists
