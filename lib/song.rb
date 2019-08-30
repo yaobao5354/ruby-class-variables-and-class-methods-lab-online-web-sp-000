@@ -47,8 +47,10 @@ class Song
       if !genres.key?(genre)
         genres[genre] = 1
       else 
-        genres[genre] = genre
-    binding.pry
+        genres[genre] = genre.collect {|value| value +1}
+      end 
+    end 
+    genres
   end
   
 end 
