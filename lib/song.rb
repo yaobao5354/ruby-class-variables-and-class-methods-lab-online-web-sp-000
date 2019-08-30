@@ -41,4 +41,9 @@ class Song
     artists
   end 
   
+  def self.genre_count
+    genres = {}
+    binding.pry
+  end
+  
 end 
